@@ -1,4 +1,4 @@
-package pers.liuqi.rpc.freemarker;
+package pers.liuqi.rpc.util.freemarker;
 
 import javax.tools.SimpleJavaFileObject;
 import java.io.IOException;

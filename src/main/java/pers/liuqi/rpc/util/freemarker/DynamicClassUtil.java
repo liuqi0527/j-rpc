@@ -1,4 +1,4 @@
-package pers.liuqi.rpc.freemarker;
+package pers.liuqi.rpc.util.freemarker;
 
 
 import com.egls.server.utils.file.FileUtil;

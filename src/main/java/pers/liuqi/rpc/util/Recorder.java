@@ -1,4 +1,4 @@
-package pers.liuqi.rpc;
+package pers.liuqi.rpc.util;
 
 /**
  * @author LiuQi - [Created on 2018-08-15]

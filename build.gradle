@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'io.freefair.lombok'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    maven { url 'http://repos.eglsgame.com/repository/maven-public/' }
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation "org.freemarker:freemarker:2.3.28"
+//            4.0.1版本会使用3.5.3-beta版本的zookeeper
+    implementation "org.apache.curator:curator-recipes:4.0.1"
+    implementation "org.apache.curator:curator-x-async:4.0.0"
+    implementation "io.netty:netty-all:4.1.28.Final"
+    implementation "org.codehaus.groovy:groovy-all:2.4.15"
+    implementation "org.reflections:reflections:0.9.11"
+    implementation "org.projectlombok:lombok:1.18.12"
+    implementation "org.apache.logging.log4j:log4j-slf4j-impl:2.11.2"
+    implementation 'org.apache.commons:commons-lang3:3.8.1'
+    implementation 'commons-io:commons-io:2.6'
+
+    compile fileTree(dir:'libs',include:['*.jar'])
+}
+

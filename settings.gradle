@@ -1,0 +1,10 @@
+pluginManagement {
+    //此处统一管理插件的版本，由于spring-boot的版本由其管理插件的版本确定，
+    //所以在dependencies.gradle中不必指定相关starter版本了
+    //noinspection GroovyAssignabilityCheck
+    plugins {
+        id 'io.freefair.lombok' version '4.1.6'
+    }
+}
+rootProject.name = 'j-rpc'
+
